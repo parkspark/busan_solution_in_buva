@@ -5,6 +5,8 @@ Python 코드만으로 HTML, CSS, JS 없이 빠르게 웹 애플리케이션과 
 
 다중 데이터셋(IMDB, Titanic)을 활용하여 조건부 필터링, 동적 레이아웃, Plotly 시각화가 결합된 인터랙티브 대시보드를 완성.
 
+### Streamlit 시연 영상을 보면 어떤 기능인지 쉽게 알 수 있음.
+
 ---
 
 ## 💡 주요 학습 내용 (Key Learnings)
