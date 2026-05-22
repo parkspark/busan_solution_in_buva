@@ -15,4 +15,5 @@ dependencies = [
 members = [
     "Streamlit/my-dashboard",
     "Streamlit_study",
+    "Streamlit_study2",
 ]

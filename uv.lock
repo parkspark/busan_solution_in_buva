@@ -10,7 +10,8 @@ resolution-markers = [
 [manifest]
 members = [
     "busan-solution",
-    "my-dashboard",
+    "streamlit-study",
+    "streamlit-study2",
 ]
 
 [[package]]
@@ -901,25 +902,6 @@ wheels = [
 ]
 
 [[package]]
-name = "my-dashboard"
-version = "0.1.0"
-source = { virtual = "Streamlit/my-dashboard" }
-dependencies = [
-    { name = "pandas" },
-    { name = "plotly" },
-    { name = "streamlit" },
-    { name = "watchdog" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "pandas", specifier = ">=3.0.3" },
-    { name = "plotly", specifier = ">=6.7.0" },
-    { name = "streamlit", specifier = ">=1.57.0" },
-    { name = "watchdog", specifier = ">=6.0.0" },
-]
-
-[[package]]
 name = "narwhals"
 version = "2.21.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1157,19 +1139,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/9f/4a/0883b8e3802965322523f0b200ecf33d31f10991d0401162f4b23c698b42/platformdirs-4.9.6.tar.gz", hash = "sha256:3bfa75b0ad0db84096ae777218481852c0ebc6c727b3168c1b9e0118e458cf0a", size = 29400, upload-time = "2026-04-09T00:04:10.812Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/75/a6/a0a304dc33b49145b21f4808d763822111e67d1c3a32b524a1baf947b6e1/platformdirs-4.9.6-py3-none-any.whl", hash = "sha256:e61adb1d5e5cb3441b4b7710bea7e4c12250ca49439228cc1021c00dcfac0917", size = 21348, upload-time = "2026-04-09T00:04:09.463Z" },
-]
-
-[[package]]
-name = "plotly"
-version = "6.7.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "narwhals" },
-    { name = "packaging" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/3a/7f/0f100df1172aadf88a929a9dbb902656b0880ba4b960fe5224867159d8f4/plotly-6.7.0.tar.gz", hash = "sha256:45eea0ff27e2a23ccd62776f77eb43aa1ca03df4192b76036e380bb479b892c6", size = 6911286, upload-time = "2026-04-09T20:36:45.738Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/90/ad/cba91b3bcf04073e4d1655a5c1710ef3f457f56f7d1b79dcc3d72f4dd912/plotly-6.7.0-py3-none-any.whl", hash = "sha256:ac8aca1c25c663a59b5b9140a549264a5badde2e057d79b8c772ae2920e32ff0", size = 9898444, upload-time = "2026-04-09T20:36:39.812Z" },
 ]
 
 [[package]]
@@ -1603,6 +1572,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/5d/f8/b2daf7a5f8ae15527
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d8/1a/3ca2293d8552bacea3e67e9600d2d1df7df4a325059769ad83d91c279595/streamlit-1.57.0-py3-none-any.whl", hash = "sha256:0d1d41972aeade5637dbb0e7f0eefa5312272f85304923d240a1b1f0475249c8", size = 9194216, upload-time = "2026-04-28T22:13:29.624Z" },
 ]
+
+[[package]]
+name = "streamlit-study"
+version = "0.1.0"
+source = { virtual = "Streamlit_study" }
+
+[[package]]
+name = "streamlit-study2"
+version = "0.1.0"
+source = { virtual = "Streamlit_study2" }
 
 [[package]]
 name = "tenacity"
