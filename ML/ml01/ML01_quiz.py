@@ -59,7 +59,7 @@ quizzes = [
             "문제없다 — 데이터를 분할한 뒤 전체 데이터로 학습하고 일부로 테스트하는 것이 올바른 머신러닝 파이프라인이다"
         ],
         "answer": 0,  # 0-indexed: 1번째 옵션이 정답
-        "explanation": "데이터를 train_test_split을 통해 분할했음에도 불구하고, 모델 학습 시 전체 데이터인 fish_data로 모델을 학습시켰습니다. 이렇게 되면 평가용으로 완전히 숨겨놓아야 할 테스트 데이터(test_input)의 정보가 모델 학습에 유출(Data Leakage)되어, 객관적인 일반화 평가 성능을 측정할 수 없습니다. 따라서 (A) 단계에서 훈련 데이터인 train_input과 train_target으로 학습을 진행해야 마땅합니다."
+        "explanation": """`train_test_split`으로 분리한 의미가 있으려면 `.fit()`에 전체 `fish_data`를 쓰면 안 된다. 분리한 `train_input`, `train_target`만으로 학습해야 모델이 `test_input`을 "처음 보는 데이터"로 평가할 수 있다. 올바른 코드: `kn.fit(train_input, train_target)`. (B)의 score는 test 데이터로 평가하므로 올바르다. 데이터를 train_test_split을 통해 분할했음에도 불구하고, 모델 학습 시 전체 데이터인 fish_data로 모델을 학습시켰습니다. 이렇게 되면 평가용으로 완전히 숨겨놓아야 할 테스트 데이터(test_input)의 정보가 모델 학습에 유출(Data Leakage)되어, 객관적인 일반화 평가 성능을 측정할 수 없습니다. 따라서 (A) 단계에서 훈련 데이터인 train_input과 train_target으로 학습을 진행해야 마땅합니다."""
     },
     {
         "id": 5,
