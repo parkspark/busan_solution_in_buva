@@ -16,9 +16,10 @@ ML02_03_PolynomialRegression = st.Page("ML02_03_Polynomial Regression.py", title
 ML02_04_Califonia = st.Page("ML02_04_Califonia.py", title="캘리포니아 집값 예측 - 다중 회귀 및 규제", icon="🏡")
 ML02_05_Quiz = st.Page("ML02_05_Quiz.py", title="퀴즈", icon="📝")
 ML02_06_califonia = st.Page("ML02_06_califonia.py", title="캘리포니아 집값 예측 - Jupyter Notebook 결과", icon="📓")
+ML02_07_Terms = st.Page("ML02_07_Terms.py", title="한 눈에 보는 핵심 개념", icon="🎯")
 
 pg = st.navigation([TIL_page, titanic_ML_page, Quiz_page, 
-    ML02_01_scaler, ML02_02_knnRegression, ML02_03_PolynomialRegression, ML02_04_Califonia, ML02_06_califonia, ML02_05_Quiz], position="hidden")
+    ML02_01_scaler, ML02_02_knnRegression, ML02_03_PolynomialRegression, ML02_04_Califonia, ML02_06_califonia, ML02_07_Terms, ML02_05_Quiz], position="hidden")
 
 with st.sidebar:
     st.title("📚 머신러닝 학습")
@@ -36,6 +37,7 @@ with st.sidebar:
     st.page_link(ML02_03_PolynomialRegression)
     st.page_link(ML02_04_Califonia)
     st.page_link(ML02_06_califonia)
+    st.page_link(ML02_07_Terms)
     st.page_link(ML02_05_Quiz)
 
 
