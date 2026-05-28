@@ -226,36 +226,36 @@ vocab_data = [
         "keywords": ["결정경계", "decision boundary", "커트라인"]
     },
 
-    # ---------------- 5. 🤒 모델 질병과 치료 ----------------
+    # ---------------- 5. 🤒 모델의 문제 현상과 해결 방법 ----------------
     {
-        "category": "5. 🤒 모델 질병과 치료",
+        "category": "5. 🤒 모델의 문제 현상과 해결 방법",
         "title": "과적합 (High Variance)",
         "desc": "훈련 데이터의 특성에만 집중하여 암기해 버린 상태입니다. 연습문제는 100점이지만 처음 보는 테스트에서는 점수가 뚝 떨어집니다.",
-        "badge": "질병",
+        "badge": "문제 현상",
         "border_color": "#EC4899",
         "keywords": ["과적합", "overfitting", "high variance", "분산"]
     },
     {
-        "category": "5. 🤒 모델 질병과 치료",
+        "category": "5. 🤒 모델의 문제 현상과 해결 방법",
         "title": "과소적합 (High Bias)",
         "desc": "모델이 너무 단순해서 훈련 데이터조차 제대로 패턴을 읽지 못한 미성숙한 상태입니다. 훈련과 테스트 점수 모두 낮게 나옵니다.",
-        "badge": "질병",
+        "badge": "문제 현상",
         "border_color": "#EC4899",
         "keywords": ["과소적합", "underfitting", "high bias", "편향"]
     },
     {
-        "category": "5. 🤒 모델 질병과 치료",
+        "category": "5. 🤒 모델의 문제 현상과 해결 방법",
         "title": "규제 (Regularization)",
         "desc": "가중치의 크기가 무분별하게 커지는 것에 벌금(Penalty)을 부여하여, 수식을 부드럽게 만들고 과적합을 억누르는 <b>예방 치료법</b>입니다.",
-        "badge": "치료법",
+        "badge": "해결 방법",
         "border_color": "#EC4899",
         "keywords": ["규제", "regularization", "벌금", "페널티"]
     },
     {
-        "category": "5. 🤒 모델 질병과 치료",
+        "category": "5. 🤒 모델의 문제 현상과 해결 방법",
         "title": "릿지(Ridge) & 라쏘(Lasso) 회귀",
         "desc": "<b>릿지(L2)</b>는 가중치의 절댓값 제곱을 기준으로 벌금을 매겨 가중치를 골고루 축소시킵니다. <b>라쏘(L1)</b>는 가중치의 절댓값 합을 기준으로 벌금을 매겨 불필요한 특성을 아예 '0'으로 만듭니다.",
-        "badge": "치료약",
+        "badge": "해결 방법",
         "border_color": "#EC4899",
         "keywords": ["릿지", "라쏘", "ridge", "lasso", "l1", "l2"]
     }
