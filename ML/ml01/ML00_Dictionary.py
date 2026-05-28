@@ -286,7 +286,7 @@ else:
 
 # 검색 결과 멘트
 if search_query:
-    st.write(f"🔎 **'{search_query}'**에 대한 검색 결과가 총 **{len(filtered_data)}건** 검색되었습니다.")
+    st.write(f"🔎**{search_query}** 에 대한 검색 결과가 총 **{len(filtered_data)}건** 검색되었습니다.")
     if len(filtered_data) == 0:
         st.warning("앗! 찾으시는 단어와 일치하는 개념이 보이지 않아요. 다른 검색어로 찾아볼까요?")
 
