@@ -18,6 +18,8 @@ st.set_page_config(
     page_icon="📈",
     layout="wide"
 )
+ML00_Dictionary = st.Page("ML00_Dictionary.py", title="통합 머신러닝 핵심 개념 사전", icon="📖")
+
 TIL_page = st.Page("ML01_Supervise_learning.py", title="정리")
 titanic_ML_page = st.Page("ML01_titanic.py", title="적용해보기", icon="🔍")
 Quiz_page = st.Page("ML01_quiz.py", title="퀴즈", icon="📝")
@@ -37,11 +39,16 @@ ML03_04_BrestCancer = st.Page("ML03_04_BrestCancer.py", title="유방암 진단 
 ML03_05_jupyter = st.Page("ML03_05_jupyter.py", title="유방암 진단 - Jupyter Notebook 결과", icon="📓")
 ML03_06_Quiz = st.Page("ML03_06_Quiz.py", title="퀴즈", icon="📝")
 
-pg = st.navigation([TIL_page, titanic_ML_page, Quiz_page, 
+pg = st.navigation([ML00_Dictionary, TIL_page, titanic_ML_page, Quiz_page, 
     ML02_01_scaler, ML02_02_knnRegression, ML02_03_PolynomialRegression, ML02_04_Califonia, ML02_06_califonia, ML02_07_Terms, ML02_05_Quiz, ML03_01_Terms, ML03_02_Fish_LogisticRegression, ML03_03_ConfusionMatrix_titanic, ML03_04_BrestCancer, ML03_05_jupyter, ML03_06_Quiz], position="hidden")
 
 with st.sidebar:
     st.title("📚 머신러닝 학습")
+    
+    st.subheader("📖 전체 용어 사전")
+    st.page_link(ML00_Dictionary)
+    
+    st.divider()
     
     st.subheader("ML 01: 지도학습 기초")
     st.page_link(TIL_page)
