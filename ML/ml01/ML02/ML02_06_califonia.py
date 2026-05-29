@@ -15,9 +15,9 @@ st.title("📓 캘리포니아 주택가격 분석 Jupyter Notebook")
 st.divider()
 
 # HTML 파일의 절대 경로 설정
-# ML02_06_califonia.py 파일의 디렉토리는 ML/ml01 이므로, 상위 폴더의 ml02 폴더에 위치한 HTML 파일을 읽습니다.
+# ML02_06_califonia.py 파일의 디렉토리는 ML/ml01/ML02 이므로, 상위 폴더의 상위 폴더인 ML 폴더 아래 ml02 폴더에 위치한 HTML 파일을 읽습니다.
 current_dir = os.path.dirname(os.path.abspath(__file__))
-html_path = os.path.join(current_dir, "..", "ml02", "ml02-california_housing.html")
+html_path = os.path.join(current_dir, "..", "..", "ml02", "ml02-california_housing.html")
 
 if os.path.exists(html_path):
     # HTML 파일 읽기
