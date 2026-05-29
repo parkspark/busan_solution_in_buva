@@ -4,7 +4,7 @@ import os
 
 st.title("🍷 와인 데이터 결정 트리 & 앙상블 분석 (Jupyter Notebook)")
 
-notebook_path = r"c:\Users\금정산2-PC15\Desktop\busan_solution_in_buva\ML\ml02\ml04ex-wine.ipynb"
+notebook_path = '../ml02/ml04ex-wine.ipynb'
 
 if not os.path.exists(notebook_path):
     st.error(f"지정된 경로에서 노트북 파일을 찾을 수 없습니다: {notebook_path}")
