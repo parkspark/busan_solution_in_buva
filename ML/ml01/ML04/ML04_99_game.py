@@ -174,6 +174,10 @@ with tabs[0]:
                     color = "#9b59b6" if row['마법동물']=="O" else "#7f8c8d"
                     st.markdown(f"<span style='color:{color}; font-weight:bold;'>{row['이모지']} {row['이름']} (마법:{row['마법동물']})</span>", unsafe_allow_html=True)
 
+
+    st.write("**분류의 정확도:** 불순도가 낮다는 것은 데이터가 섞여 있지 않고 특정 클래스(범주)로 깔끔하게 나뉘었음을 뜻합니다.")
+    st.write("**의사결정나무의 목표:** 모델은 데이터를 분할할 때 불순도를 낮추는 방향으로 가지를 뻗어나가며, 최종적으로 불순도가 \(0\)이 되는 것을 목표로 합니다.")
+
 # --- Stage 2 ---
 with tabs[1]:
     st.header("Stage 2: 꼬치꼬치 캐묻기 (과적합, Overfitting)")
