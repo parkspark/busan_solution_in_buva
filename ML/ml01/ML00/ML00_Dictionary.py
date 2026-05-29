@@ -258,6 +258,98 @@ vocab_data = [
         "badge": "해결 방법",
         "border_color": "#EC4899",
         "keywords": ["릿지", "라쏘", "ridge", "lasso", "l1", "l2"]
+    },
+
+    # ---------------- 6. 🌳 트리 모델과 앙상블 ----------------
+    {
+        "category": "6. 🌳 트리 모델과 앙상블",
+        "title": "결정 트리 (Decision Tree)",
+        "desc": "스무고개 게임처럼 <b>루트/결정/리프 노드</b>를 거치며 질문을 던져 정답을 좁혀가는 알고리즘입니다. 임계값 대소 비교로 분기하므로 <b>스케일링이 불필요</b>합니다.",
+        "badge": "알고리즘",
+        "border_color": "#059669",
+        "keywords": ["결정트리", "decision tree", "스무고개", "노드", "스케일링"]
+    },
+    {
+        "category": "6. 🌳 트리 모델과 앙상블",
+        "title": "불순도 (Gini & Entropy) & 정보 이득",
+        "desc": "데이터의 섞임 정도를 나타내는 지표(방이 얼마나 어질러져 있는지)입니다. 분기 전후의 불순도 감소량인 <b>정보 이득(Information Gain)</b>이 최대가 되도록 분기합니다.",
+        "badge": "평가 지표",
+        "border_color": "#059669",
+        "keywords": ["지니", "gini", "엔트로피", "entropy", "불순도", "정보이득", "ig"]
+    },
+    {
+        "category": "6. 🌳 트리 모델과 앙상블",
+        "title": "가지치기 (max_depth) & 특성 중요도",
+        "desc": "과적합을 막기 위해 트리의 깊이를 제한하는 것을 <b>가지치기</b>라 합니다. 모델이 정답을 맞히는 데 각 특성이 기여한 비율은 <b>feature_importances_</b>로 확인합니다.",
+        "badge": "핵심 개념",
+        "border_color": "#059669",
+        "keywords": ["가지치기", "max_depth", "특성중요도", "feature_importances"]
+    },
+    {
+        "category": "6. 🌳 트리 모델과 앙상블",
+        "title": "배깅 (Bagging)",
+        "desc": "복원 추출(Bootstrap)된 여러 데이터 샘플로 트리를 병렬 학습시킨 후 다수결로 예측을 결합해 분산을 줄이는 앙상블 기법입니다.",
+        "badge": "앙상블 기법",
+        "border_color": "#059669",
+        "keywords": ["배깅", "bagging", "복원추출", "다수결", "앙상블"]
+    },
+    {
+        "category": "6. 🌳 트리 모델과 앙상블",
+        "title": "랜덤 포레스트 (Random Forest)",
+        "desc": "수많은 결정 트리가 모여 숲을 이루는 대표적인 배깅 모델입니다. 데이터와 함께 <b>질문할 특성(Feature)도 무작위로 선택</b>해 과적합을 매우 효과적으로 방지합니다.",
+        "badge": "알고리즘",
+        "border_color": "#059669",
+        "keywords": ["랜덤포레스트", "random forest", "rf", "숲"]
+    },
+    {
+        "category": "6. 🌳 트리 모델과 앙상블",
+        "title": "부스팅 (Boosting)",
+        "desc": "이전 트리의 잔차(오답)를 다음 트리가 집중적으로 보강하며 순차적으로 실력을 점진적으로 끌어올리는 강력한 앙상블 기법입니다.",
+        "badge": "앙상블 기법",
+        "border_color": "#059669",
+        "keywords": ["부스팅", "boosting", "순차적", "잔차", "오답노트"]
+    },
+    {
+        "category": "6. 🌳 트리 모델과 앙상블",
+        "title": "초고속 부스팅 (XGB, LGBM, HistGBM)",
+        "desc": "<b>XGBoost</b>(수학적 규제 탑재), <b>LightGBM</b>(리프 우선 고속 성장), <b>HistGBM</b>(히스토그램 기반 고속 연산 및 결측치 처리) 등 실무 에이스 모델들입니다.",
+        "badge": "알고리즘",
+        "border_color": "#059669",
+        "keywords": ["xgboost", "lightgbm", "histgbm", "lgbm", "xgb"]
+    },
+
+    # ---------------- 7. ⚙️ 교차 검증과 튜닝 ----------------
+    {
+        "category": "7. ⚙️ 교차 검증과 하이퍼파라미터 튜닝",
+        "title": "K-Fold 교차 검증",
+        "desc": "데이터를 K등분하여 돌아가며 모의고사를 보듯 <b>순차적으로 검증 후 평균 점수를 내는 방법</b>으로, 한 번만 평가하는 hold-out의 함정을 극복합니다.",
+        "badge": "검증 기법",
+        "border_color": "#D97706",
+        "keywords": ["k-fold", "교차검증", "cv", "kfold", "hold-out"]
+    },
+    {
+        "category": "7. ⚙️ 교차 검증과 하이퍼파라미터 튜닝",
+        "title": "OOB (Out-of-Bag)",
+        "desc": "배깅의 복원 추출 과정에서 한 번도 뽑히지 않고 남은 데이터로, 별도의 검증 세트를 만들지 않고도 모델 성능을 무료로 신뢰도 높게 추정할 때 사용합니다.",
+        "badge": "검증 데이터",
+        "border_color": "#D97706",
+        "keywords": ["oob", "out-of-bag", "무료평가"]
+    },
+    {
+        "category": "7. ⚙️ 교차 검증과 하이퍼파라미터 튜닝",
+        "title": "GridSearchCV",
+        "desc": "파라미터 격자의 모든 조합을 전수 조사하고 교차 검증을 수행하여 최적의 조합을 찾으며, 최고 모델 객체를 <b>best_estimator_</b>에 저장해 즉시 사용할 수 있습니다.",
+        "badge": "튜닝 도구",
+        "border_color": "#D97706",
+        "keywords": ["gridsearch", "gridsearchcv", "그리드서치", "전수조사", "best_estimator"]
+    },
+    {
+        "category": "7. ⚙️ 교차 검증과 하이퍼파라미터 튜닝",
+        "title": "RandomizedSearchCV",
+        "desc": "탐색할 파라미터 조합이 너무 많을 때, 지정된 횟수만큼 <b>무작위로 샘플링하여 고속으로 최적 조합을 탐색</b>하는 효율적인 방법입니다.",
+        "badge": "튜닝 도구",
+        "border_color": "#D97706",
+        "keywords": ["randomizedsearchcv", "randomsearch", "랜덤서치"]
     }
 ]
 
