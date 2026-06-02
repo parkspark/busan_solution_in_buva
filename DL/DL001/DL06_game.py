@@ -72,7 +72,7 @@ with st.sidebar:
     
     st.subheader("학습 파라미터")
     st.markdown("두 모델 모두에게 동일한 반복 횟수(기회)를 제공합니다.")
-    epochs = st.slider("Max Iterations / Epochs", 10, 500, 200, step=10)
+    epochs = st.slider("Max Iterations / Epochs", 10, 500, 50, step=10)
     train_clicked = st.button("두 세계의 모델 학습하기 (Train Both) 🚀", use_container_width=True)
 
 # ==========================================
