@@ -117,7 +117,7 @@ terms_part2 = [
 for item in terms_part2:
     with st.expander(f"✨ **{item['term']}**", expanded=False):
         st.markdown(f"**📚 딥러닝에서의 정의**\n\n> {item['definition']}")
-        st.info(f"💡 **중학생도 이해하기 쉬운 설명**\n\n{item['easy_desc']}")
+        st.info(f"💡 **이해하기 쉬운 설명**\n\n{item['easy_desc']}")
 
 st.markdown("---")
 st.header("💡 3. 딥러닝 핵심 개념 상세 풀이 (심화)")
