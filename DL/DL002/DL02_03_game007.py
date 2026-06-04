@@ -197,7 +197,7 @@ if st.session_state.is_cleared:
     st.write(f"- 20 Epoch 이내 수렴 (현재 {st.session_state.epoch}): {'★' if st.session_state.epoch <= 20 else '☆'}")
     st.write(f"- 배치 사이즈 16 이상 사용 (현재 {batch_size}): {'★' if batch_size >= 16 else '☆'}")
 else:
-    dialogue = f"출력층에서 발생한 오차가 제 뇌 속을 거꾸로 타고 들어오고 있어요! 아... 내 실수가 어디서 시작됐는지 이제 알겠어!<br><b>(미션: Loss를 0.3 이하로 낮추세요! 현재: {current_loss:.4f} | Epoch: {st.session_state.epoch})</b>"
+    dialogue = f"출력층에서 발생한 오차를 어떻게 줄일 수 있을 까요? <br><b>(미션: Loss를 0.3 이하로 낮추세요! 현재: {current_loss:.4f} | Epoch: {st.session_state.epoch})</b>"
     st.markdown(f'<div class="nexus-dialogue">🤖 <b>Nexus:</b> {dialogue}</div>', unsafe_allow_html=True)
 
 # 중앙: 실시간 네트워크 그래프 시각화 (Plotly)

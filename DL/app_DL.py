@@ -28,8 +28,14 @@ Stage9 = st.Page("DL002/DL02_05_game09.py", title="Stage 9: ReLU의 각성", ico
 Stage10 = st.Page("DL002/DL02_06_game10.py", title="Stage 10: 깊이의 힘", icon="👁️")
 Stage11 = st.Page("DL002/Dl02_07_game11.py", title="Stage 11: 최적의 길 찾기", icon="🧭")
 
+# Interactive Simulators (DL_game)
+Sim1 = st.Page("DL_game/back02.py", title="1. AI 조련사 (순전파/역전파)", icon="🤖")
+Sim2 = st.Page("DL_game/Vanishing Gradient.py", title="2. 기울기 소멸 시뮬레이터", icon="📉")
+Sim3 = st.Page("DL_game/Backpropagation.py", title="3. Backprop Hero", icon="🦸")
+
 pg = st.navigation({
     "Deep Learning 기초": [DL01_Terms, DL02_Terms],
-    "Neural Odyssey": [Stage1, Stage2, Stage3, Stage4, Stage5, Stage6, Stage7, Stage8, Stage9, Stage10, Stage11]
+    "Neural Odyssey": [Stage1, Stage2, Stage3, Stage4, Stage5, Stage6, Stage7, Stage8, Stage9, Stage10, Stage11],
+    "인터랙티브 시뮬레이터": [Sim1, Sim2, Sim3]
 })
 pg.run()
