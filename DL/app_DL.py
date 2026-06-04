@@ -22,7 +22,7 @@ Stage5 = st.Page("DL001/DL06_game.py", title="Stage 5: 고전 vs 현대", icon="
 Stage6 = st.Page("DL001/DL07_game.py", title="Stage 6: 이미지의 비밀", icon="👁️")
 
 # Neural Odyssey Games (Day 2)
-Stage7 = st.Page("DL002/dL02_03_game007.py", title="Stage 7: 역전파의 비밀", icon="🔄")
+Stage7 = st.Page("DL002/DL02_03_game007.py", title="Stage 7: 역전파의 비밀", icon="🔄")
 Stage8 = st.Page("DL002/DL02_04_game008.py", title="Stage 8: 기울기 소멸의 위기", icon="📉")
 Stage9 = st.Page("DL002/DL02_05_game09.py", title="Stage 9: ReLU의 각성", icon="⚡")
 Stage10 = st.Page("DL002/DL02_06_game10.py", title="Stage 10: 깊이의 힘", icon="👁️")
