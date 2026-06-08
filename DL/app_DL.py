@@ -33,9 +33,33 @@ Sim1 = st.Page("DL_game/back02.py", title="1. AI 조련사 (순전파/역전파)
 Sim2 = st.Page("DL_game/Vanishing Gradient.py", title="2. 기울기 소멸 시뮬레이터", icon="📉")
 Sim3 = st.Page("DL_game/Backpropagation.py", title="3. Backprop Hero", icon="🦸")
 
-pg = st.navigation({
+# CNN 시각화 도구 (DL004)
+DL04_01 = st.Page("DL004/DL04_01_LimitationOfDense.py", title="01. Dense Layer의 한계", icon="🧱")
+DL04_02 = st.Page("DL004/DL04_02_convolution.py", title="02. 합성곱(Convolution)의 기초", icon="🔍")
+DL04_03 = st.Page("DL004/DL04_03_EdgeDetection.py", title="03. 엣지 감지 (Sobel Filter)", icon="🔪")
+DL04_04 = st.Page("DL004/DL04_04_Weight Sharing.py", title="04. 가중치 공유 (Weight Sharing)", icon="⚖️")
+DL04_05 = st.Page("DL004/DL04_05_Convolution_Layer.py", title="05. Conv2D 파라미터 계산기", icon="🧮")
+DL04_06 = st.Page("DL004/DL04_06_padding.py", title="06. 패딩 (Padding: Valid vs Same)", icon="📏")
+DL04_07 = st.Page("DL004/DL04_07_stride.py", title="07. 스트라이드 (Stride)", icon="🏃")
+DL04_08 = st.Page("DL004/DL04_08_MaxPooling2D.py", title="08. 풀링 (Max/Average Pooling)", icon="🏊")
+DL04_09 = st.Page("DL004/DL04_09_CNN_Flow.py", title="09. CNN 파이프라인 흐름도", icon="🌊")
+DL04_10 = st.Page("DL004/DL04_10_Spatial Hierarchy.py", title="10. 공간적 계층 구조", icon="🏢")
+DL04_11 = st.Page("DL004/DL04_11_3D.py", title="11. 3D 복셀 합성곱 (Voxel)", icon="🧊")
+DL04_12 = st.Page("DL004/DL04_12_4D.py", title="12. 4D 시공간 합성곱 (Time+Space)", icon="⏳")
+
+pages = {
     "Deep Learning 기초": [DL01_Terms, DL02_Terms],
     "Neural Odyssey": [Stage1, Stage2, Stage3, Stage4, Stage5, Stage6, Stage7, Stage8, Stage9, Stage10, Stage11],
-    "인터랙티브 시뮬레이터": [Sim1, Sim2, Sim3]
-})
+    "인터랙티브 시뮬레이터": [Sim1, Sim2, Sim3],
+    "CNN 기초": [DL04_01, DL04_02, DL04_03, DL04_04, DL04_05, DL04_06, DL04_07, DL04_08, DL04_09, DL04_10, DL04_11, DL04_12]
+}
+
+pg = st.navigation(pages, position="hidden")
+
+for section, page_list in pages.items():
+    is_active = pg in page_list
+    with st.sidebar.expander(section, expanded=is_active):
+        for p in page_list:
+            st.page_link(p)
+
 pg.run()
