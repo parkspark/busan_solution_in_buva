@@ -407,7 +407,8 @@ with tab_image:
     
     img_path_or_file = uploaded_file
     if uploaded_file is None:
-        default_img_path = "../강의자료/강아지.jpg"
+        # default_img_path = "강아지.jpg"
+        default_img_path = "DL004/강아지.jpg"
         if os.path.exists(default_img_path):
             img_path_or_file = default_img_path
             

@@ -124,7 +124,9 @@ st.divider()
 # ==============================================================================
 uploaded_file = st.file_uploader(t[st.session_state.lang]['uploader'], type=["jpg", "jpeg", "png"])
 
-DEFAULT_IMG_PATH = "../강의자료/강아지.jpg"
+# DEFAULT_IMG_PATH = "./강아지.jpg"
+DEFAULT_IMG_PATH = "DL004/강아지.jpg"
+
 
 if uploaded_file is not None:
     image_raw = Image.open(uploaded_file).convert('RGB')
