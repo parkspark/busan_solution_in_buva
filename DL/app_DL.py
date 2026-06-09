@@ -33,7 +33,7 @@ Sim1 = st.Page("DL_game/back02.py", title="1. AI 조련사 (순전파/역전파)
 Sim2 = st.Page("DL_game/Vanishing Gradient.py", title="2. 기울기 소멸 시뮬레이터", icon="📉")
 Sim3 = st.Page("DL_game/Backpropagation.py", title="3. Backprop Hero", icon="🦸")
 
-# CNN 시각화 도구 (DL004)
+# CNN 시각화 도구 (DL004 & DL005)
 DL04_01 = st.Page("DL004/DL04_01_LimitationOfDense.py", title="01. Dense Layer의 한계", icon="🧱")
 DL04_02 = st.Page("DL004/DL04_02_convolution.py", title="02. 합성곱(Convolution)의 기초", icon="🔍")
 DL04_03 = st.Page("DL004/DL04_03_EdgeDetection.py", title="03. 엣지 감지 (Sobel Filter)", icon="🔪")
@@ -47,19 +47,22 @@ DL04_10 = st.Page("DL004/DL04_10_Spatial Hierarchy.py", title="10. 공간적 계
 DL04_11 = st.Page("DL004/DL04_11_3D.py", title="11. 3D 복셀 합성곱 (Voxel)", icon="🧊")
 DL04_12 = st.Page("DL004/DL04_12_4D.py", title="12. 4D 시공간 합성곱 (Time+Space)", icon="⏳")
 
+# CNN 심화 및 응용 (DL005)
+DL05_01 = st.Page("DL005/DL05_01_ConvFilter.py", title="01. 합성곱 필터 심화", icon="🔍")
+DL05_02 = st.Page("DL005/DL05_02_FuctionalAPI.py", title="02. Functional API 모델링", icon="🏗️")
+DL05_03 = st.Page("DL005/DL05_03_AI_Xray.py", title="03. AI X-Ray 시각화", icon="🩺")
+DL05_04 = st.Page("DL005/DL05_04_DataAugmentation.py", title="04. 데이터 증강 기초", icon="🪄")
+DL05_05 = st.Page("DL005/DL05_05_DataAugmentation_practice.py", title="05. 데이터 증강 실습", icon="💻")
+DL05_06 = st.Page("DL005/DL05_06_TransferLearning.py", title="06. 전이 학습(Transfer Learning)", icon="♻️")
+DL05_07 = st.Page("DL005/DL05_07_YOLO.py", title="07. 객체 탐지(YOLO) 원리 비교", icon="⚡")
+
 pages = {
     "Deep Learning 기초": [DL01_Terms, DL02_Terms],
-    "Neural Odyssey": [Stage1, Stage2, Stage3, Stage4, Stage5, Stage6, Stage7, Stage8, Stage9, Stage10, Stage11],
-    "인터랙티브 시뮬레이터": [Sim1, Sim2, Sim3],
-    "CNN 기초": [DL04_01, DL04_02, DL04_03, DL04_04, DL04_05, DL04_06, DL04_07, DL04_08, DL04_09, DL04_10, DL04_11, DL04_12]
+    "Neural Odyssey Games": [Stage1, Stage2, Stage3, Stage4, Stage5, Stage6, Stage7, Stage8, Stage9, Stage10, Stage11],
+    "Interactive Simulators": [Sim1, Sim2, Sim3],
+    "CNN 시각화 도구": [DL04_01, DL04_02, DL04_03, DL04_04, DL04_05, DL04_06, DL04_07, DL04_08, DL04_09, DL04_10, DL04_11, DL04_12],
+    "CNN 심화 및 응용": [DL05_01, DL05_02, DL05_03, DL05_04, DL05_05, DL05_06, DL05_07]
 }
 
-pg = st.navigation(pages, position="hidden")
-
-for section, page_list in pages.items():
-    is_active = pg in page_list
-    with st.sidebar.expander(section, expanded=is_active):
-        for p in page_list:
-            st.page_link(p)
-
+pg = st.navigation(pages)
 pg.run()
