@@ -132,12 +132,21 @@ def process_yolo(img):
         
     return img_copy
 
+import os
+
 # 3 & 4. 조작 및 시각화 부 (메인 화면)
-if uploaded_file is None:
-    st.info("시각화할 이미지를 업로드해주세요.")
-else:
-    # 이미지를 RGB로 읽어오기
+image = None
+if uploaded_file is not None:
     image = Image.open(uploaded_file).convert("RGB")
+else:
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    dog_img_path = os.path.join(base_dir, "..", "강아지.jpg")
+    if os.path.exists(dog_img_path):
+        image = Image.open(dog_img_path).convert("RGB")
+    else:
+        st.info("시각화할 이미지를 업로드해주세요.")
+
+if image is not None:
     img_arr = np.array(image)
     
     # 3개의 탭 생성
